@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #fafafa;
+}
+
+.cookie-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:1rem;
+    border-radius: 2rem;
+    width: 23rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(-270deg, #5a3306 0%, #d3a543 150%);
+}
+
+.text{
+    color: whitesmoke;
+    width: 65%;
+}
+.cookie{
+    transform: scale(.8);
+    overflow: visible;
+}
+.title{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 0.2rem;
+}
+
+.caption{
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+button{
+    font-size: 0.7rem;
+    color: #5a3306;
+    border-style: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.6rem;
+    background-color: white;
+}
