@@ -12,3 +12,469 @@ h3,
 h4 {
   color: rgb(40, 40, 40);
 }
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  position: fixed;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  width: 100vw;
+}
+.nav-links a, .buy-btn{
+  margin-left: 2rem;
+}
+.logo{
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+}
+.buy-btn{
+  cursor: pointer;
+  padding: 0.3rem 2rem;
+  border: none;
+  color: white;
+  background-color: #6056f5;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+}
+
+.first-page{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 15%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.first-page-title{
+  font-size: 3.5rem;
+  padding-bottom: 4rem;
+}
+.first-page-subtitle{
+  font-size: 1.5rem;
+}
+
+.intro-video{
+  position: absolute;
+  z-index: -1;
+  max-width: 100vw;
+  /* bottom: 0%; */
+}
+
+
+/* 2nd page */
+.second-page{
+  min-height: 125vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.smoke-video{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* bottom: 0%; */
+}
+.second-text{
+  z-index: 2;
+  padding: 5% 30%;
+  /* text-align: center;  */
+  font-size: 2.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+/* 3rd Page */
+.third-page{
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 3rem 20%;
+}
+.third-text-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  width: 100%;
+}
+.product-images{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.large-phone{
+  scale: 0.6;
+  transform: translateX(30%);
+}
+.small-phone{
+  scale: 0.6;
+  transform: translateX(-30%);
+  z-index: 2;
+}
+.retina-text{
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.phone-size{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.phone-title{
+  font-size: 1.2rem;
+}
+.pro-size{
+  text-align: right;
+}
+/* 4rth page */
+.fourth-page{
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+}
+.fourth-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  flex:1;
+  background-color: white;
+}
+.phone-gallery{
+  display: flex;
+  align-self: flex-start;
+  max-height: 32rem;
+}
+.gallery-container img{
+  transform: scale(0.8);
+}
+.gallery-container{
+  min-width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-container img{
+  scale: 0.7;
+}
+.swatch-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.swatches img{
+  padding: 0.3rem 0.3rem;
+  cursor: pointer;
+}
+.blue{
+  z-index: 2;
+}
+.fourth-right{
+  position: relative;
+  background-color: black;
+  flex: 1;
+}
+.fourth-right img{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.6);
+  transform-origin: bottom;
+}
+/* Fifth page */
+.fifth-page{
+  min-height: 100vh;
+  /* background: black; */
+  position: relative;
+}
+.product-video{
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  object-fit: cover;
+}
+.fifth-info{
+  padding: 0 10%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  z-index: 2;
+}
+.fifth-left,
+.fifth-right{
+  width: 20%; 
+}
+.fifth-left h3,
+.fifth-right h3{
+  padding: 3rem 0;
+  color: rgb(200, 200, 200);
+}
+.fifth-left span,
+.fifth-right span{
+  font-size: 1.5rem;
+  color: rgb(240, 240, 240);
+
+}
+
+/* Sixth page */
+.sixth-page{
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 15%;
+}
+.portrait-container img{
+  height: 80vh;
+}
+.photo-video{
+  position: absolute;
+  left: 40%;
+  top:150%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-video video
+,.photo-video img
+{
+  position: absolute;
+}
+
+.photo-video video{
+  scale: 0.61;
+  border-radius: 3rem;
+  left: 1rem;
+  bottom: 1rem;
+}
+.photo-video img{
+  scale: 0.6;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+}
+
+.photo-title{
+  font-size: 2rem;
+}
+.photo-subtitle{
+  font-size: 3.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width:640px){
+    nav{
+      padding: 0 5%;
+      font-size: 0.6rem;
+      height: 5vh;
+    }
+    .nav-links a, .buy-btn{
+     margin-left: 1rem;
+    }
+    .logo{
+      font-weight: bold;
+      font-size: 0.8rem;
+      letter-spacing: -0.5px;
+    }
+    .buy-btn{
+      padding: 0.2rem 1rem;
+      font-size: 0.6rem;
+    }
+    .first-page{
+      padding: 5% 5%;
+      max-width: 100vw;
+      overflow: hidden;
+
+    }
+    .first-page-title{
+      font-size: 2.5rem;
+      padding-bottom: 50%;
+    }
+    .first-page-subtitle{
+      font-size: 1.2rem;
+    }
+    .intro-video{
+      bottom: 15%;
+    }
+    .second-page{
+      min-height: 100vh;
+      max-width: 100vw;
+      overflow: hidden;
+    }
+    .second-text{
+      font-size: 1.8rem;
+      padding: 5% 10%;
+    }
+    .third-page{
+      padding: 3rem 5%;
+      max-width: 100vw;
+      overflow: hidden;
+    }
+    .large-phone{
+      max-width: 180%;
+    }
+    .small-phone{
+      max-width: 180%;
+    }
+    .retina-text{
+      position: absolute;
+      bottom: 25%;
+      font-size: 0.6rem;
+      text-align: center;
+    }
+    .phone-size{
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .phone-title{
+      padding-top: 10rem;
+      font-size: 0.8rem;
+    }
+    .pro-size{
+      text-align: right;
+    }
+    .product-images {
+      display: flex;
+      justify-content: center;
+      left:50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+    }
+    .fourth-page{
+      max-width: 100vw;
+      overflow: hidden;
+    }
+    .phone-gallery{
+      max-height: 100vh;
+    }
+    .gallery-container img{
+      transform: scale(0.3);
+    }
+    .fourth-right{
+      display: none;
+    }
+    .gallery-container{
+      width: 100vw;
+    }
+    .gallery-container img{
+      transform: scale(1);
+    }
+    .fifth-page{
+      max-width: 100vw;
+      overflow: hidden;
+      background-color: black;
+    }
+    .product-video{
+      opacity: 0.3;
+    }
+    .fifth-info{
+      padding: 0 7%;
+    }
+    .fifth-left,
+    .fifth-right{
+      width: 40%; 
+    }
+    .fifth-left h3,
+    .fifth-right h3{
+      font-size: 0.8rem;
+    }
+    .fifth-left span,
+    .fifth-right span{
+      font-size: 1.2rem;
+      color: rgb(240, 240, 240);
+    }
+    .sixth-page{
+      min-height: 100vh;
+      padding: 10% 5%;
+      max-width: 100vw;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .portrait-container img{
+      height: 50vh;
+    }
+    .photo-video{
+      top:100%;
+      z-index: 2;
+      left:20%;
+    }
+    .photo-title{
+      font-size: 1.5rem;
+    }
+    .photo-subtitle{
+      font-size: 2rem;
+    }
+
+}
+@media screen and (max-width:1400px){
+  .product-images {
+      display: flex;
+      justify-content: center;
+      left:50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+    }
+    .third-page{
+      padding: 3rem 5%;
+      max-width: 100vw;
+      overflow: hidden;
+    }
+    .large-phone{
+      max-width: 180%;
+    }
+    .small-phone{
+      max-width: 180%;
+    }
+    .phone-gallery{
+      max-height: 100vh;
+    }
+        .fifth-page{
+      max-width: 100vw;
+      overflow: hidden;
+      background-color: black;
+    }
+    .product-video{
+      opacity: 0.3;
+    }
+    .fifth-info{
+      padding: 0 7%;
+    }
+    .fifth-left,
+    .fifth-right{
+      width: 40%; 
+    }
+    .fifth-left h3,
+    .fifth-right h3{
+      font-size: 0.8rem;
+    }
+    .fifth-left span,
+    .fifth-right span{
+      font-size: 1.2rem;
+      color: rgb(240, 240, 240);
+    }
+}
