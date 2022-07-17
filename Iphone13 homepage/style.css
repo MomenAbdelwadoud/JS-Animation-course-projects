@@ -104,11 +104,12 @@ nav{
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  padding: 3rem 20%;
+  padding: 5% 20%;
 }
 .third-text-container{
   display: flex;
   justify-content: space-between;
+  padding: 0 5%;
   align-items: center;
   z-index: 3;
   width: 100%;
@@ -258,6 +259,7 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .photo-video video
 ,.photo-video img
@@ -334,16 +336,19 @@ nav{
       max-width: 100vw;
       overflow: hidden;
     }
+    .third-text-container{
+      padding-top:15%;
+    }
     .large-phone{
-      max-width: 180%;
+      max-width: 150%;
     }
     .small-phone{
-      max-width: 180%;
+      max-width: 150%;
     }
     .retina-text{
       position: absolute;
-      bottom: 25%;
-      font-size: 0.6rem;
+      bottom: 20%;
+      font-size: 0.5rem;
       text-align: center;
     }
     .phone-size{
@@ -422,6 +427,7 @@ nav{
       top:100%;
       z-index: 2;
       left:20%;
+      scale: 0.8;
     }
     .photo-title{
       font-size: 1.5rem;
@@ -431,29 +437,30 @@ nav{
     }
 
 }
-@media screen and (max-width:1400px){
+@media screen and (max-width:1300px){
   .product-images {
       display: flex;
       justify-content: center;
+      align-items: flex-end;
       left:50%;
-      top: 30%;
+      top: 40%;
       transform: translate(-50%, -50%);
     }
     .third-page{
-      padding: 3rem 5%;
+      padding: 5% 15%;
       max-width: 100vw;
       overflow: hidden;
     }
     .large-phone{
-      max-width: 180%;
+      max-width: 150%;
     }
     .small-phone{
-      max-width: 180%;
+      max-width: 150%;
     }
     .phone-gallery{
-      max-height: 100vh;
+      max-height: 90vh;
     }
-        .fifth-page{
+    .fifth-page{
       max-width: 100vw;
       overflow: hidden;
       background-color: black;
