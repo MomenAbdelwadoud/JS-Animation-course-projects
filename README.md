@@ -8,7 +8,8 @@
 5.Page transitions: E-commerce website with transitions between pages.
 6.Iphone 13 homepage: iphone 13 Pro landing page clone(partially) that contain all the topic mentioned above + scroll animations and parallax effect.
 
-Preview the last project from [here](https://iphone13-animations-clone.netlify.app)
+Preview the iPhone13 project from [here](https://iphone13-animations-clone.netlify.app)
+Preview the Page transitions project from [here](https://ecommerce-page-transitions.netlify.app/)
 
 
 All credit goes to DevEd who made this course.
