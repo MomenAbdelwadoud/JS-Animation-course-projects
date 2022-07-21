@@ -26,7 +26,7 @@ nav{
   padding: 0 15%;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  z-index: 10;
+  z-index: 20;
   width: 100vw;
 }
 .nav-links a, .buy-btn{
@@ -121,26 +121,12 @@ nav{
   transform: translate(-50%, -50%);
 }
 .large-phone{
-  -webkit-transform: scale(0.6); /* WebKit */
-  -moz-transform: scale(0.6); /* Mozilla */
-  -o-transform: scale(0.6); /* Opera */
-  -ms-transform: scale(0.6); /* Internet Explorer */
-  transform: translateX(30%);
-  -webkit-transform: translateX(30%);
-  -moz-transform: translateX(30%);
-  -o-transform: translateX(30%);
-  -ms-transform: translateX(30%);
+  transform: translateX(50%);
+  max-width: 15vw;
 }
 .small-phone{
-  -webkit-transform: scale(0.6); /* WebKit */
-  -moz-transform: scale(0.6); /* Mozilla */
-  -o-transform: scale(0.6); /* Opera */
-  -ms-transform: scale(0.6); /* Internet Explorer */
-  transform: translateX(-30%);
-  -webkit-transform: translateX(30%);
-  -moz-transform: translateX(30%);
-  -o-transform: translateX(30%);
-  -ms-transform: translateX(30%);
+  transform: translateX(-50%);
+  max-width: 15vw;
   z-index: 2;
 }
 .retina-text{
@@ -172,6 +158,8 @@ nav{
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  justify-content: space-between;
+  padding: 5% 0;
   flex:1;
   background-color: white;
 }
@@ -181,7 +169,7 @@ nav{
   max-height: 32rem;
 }
 .gallery-container img{
-  transform: scale(0.8);
+  max-width: 40%;
 }
 .gallery-container{
   min-width: 50vw;
@@ -189,9 +177,7 @@ nav{
   justify-content: center;
   align-items: center;
 }
-.gallery-container img{
-  transform: scale(0.7);
-}
+
 .swatch-container{
   display: flex;
   justify-content: center;
@@ -214,8 +200,9 @@ nav{
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%) scale(0.6);
+  transform: translateX(-50%);
   transform-origin: bottom;
+  max-width: 70%;
 }
 /* Fifth page */
 .fifth-page{
@@ -267,7 +254,7 @@ nav{
 }
 .photo-video{
   position: absolute;
-  left: 40%;
+  left: 50%;
   top:150%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -282,21 +269,17 @@ nav{
 }
 
 .photo-video video{
-  -webkit-transform: scale(0.61); /* WebKit */
-  -moz-transform: scale(0.61); /* Mozilla */
-  -o-transform: scale(0.61); /* Opera */
-  -ms-transform: scale(0.61); /* Internet Explorer */
-  transform: scale(0.61);
-  border-radius: 3rem;
-  left: 1rem;
-  bottom: 1rem;
+  max-width: 15vw;
+  border-radius: 10%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -52%);
 }
 .photo-video img{
-  -webkit-transform: scale(0.6); /* WebKit */
-  -moz-transform: scale(0.6); /* Mozilla */
-  -o-transform: scale(0.6); /* Opera */
-  -ms-transform: scale(0.6); /* Internet Explorer */
-  transform: scale(0.6);
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 16.3vw;
   z-index: 2;
   left: 0;
   bottom: 0;
@@ -310,7 +293,7 @@ nav{
 }
 
 /* Responsive */
-@media screen and (max-width:640px){
+@media(max-width:640px){
     nav{
       padding: 0 5%;
       font-size: 0.6rem;
@@ -362,15 +345,14 @@ nav{
       padding-top:15%;
     }
     .large-phone{
-      max-width: 150%;
+      width: 200%;
     }
     .small-phone{
-      max-width: 150%;
+      max-width: 100vw;
     }
     .retina-text{
       position: absolute;
-      bottom: 20%;
-      font-size: 0.5rem;
+      bottom: 15%;
       text-align: center;
     }
     .phone-size{
@@ -399,7 +381,7 @@ nav{
       max-height: 100vh;
     }
     .gallery-container img{
-      transform: scale(0.3);
+      /* TODO: scale:.3 */
     }
     .fourth-right{
       display: none;
@@ -408,7 +390,7 @@ nav{
       width: 100vw;
     }
     .gallery-container img{
-      transform: scale(1);
+      /* TODO: scale :1 */
     }
     .fifth-page{
       max-width: 100vw;
@@ -436,30 +418,49 @@ nav{
     }
     .sixth-page{
       min-height: 100vh;
-      padding: 10% 5%;
+      padding: 15% 5%;
       max-width: 100vw;
       overflow: hidden;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: start;
     }
     .portrait-container img{
-      height: 50vh;
+      height: 30vh;
     }
     .photo-video{
-      top:100%;
+      top:20%;
       z-index: 2;
-      left:20%;
-      transform: scale(0.8);
+      left:50%;
+      /* TODO: scale:0.8 */
     }
+    
     .photo-title{
       font-size: 1.5rem;
+      padding-top: 10%;
     }
     .photo-subtitle{
       font-size: 2rem;
     }
+    .photo-video video{
+      max-width: 50vw;
+      border-radius: 10%;
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, -53%);
+    }
+    .photo-video img{
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 53vw;
+      z-index: 2;
+      left: 0;
+      bottom: 0;
+    }
+    
 
 }
-@media screen and (max-width:1300px){
+@media (max-width:1000px){
   .product-images {
       display: flex;
       justify-content: center;
@@ -469,19 +470,35 @@ nav{
       transform: translate(-50%, -50%);
     }
     .third-page{
-      padding: 5% 15%;
+      padding: 5% 2%;
       max-width: 100vw;
       overflow: hidden;
     }
+    .third-text-container{
+      padding-top:50%;
+    }
     .large-phone{
-      max-width: 150%;
+      max-width: 35vw;
     }
     .small-phone{
-      max-width: 150%;
+      max-width: 27vw;
+    }
+    .retina-text{
+      bottom: 10%;
     }
     .phone-gallery{
       max-height: 90vh;
     }
+    .gallery-container img{
+      max-width: 80%;
+    }
+    .retina-text{
+      font-size: max(0.7rem, calc(100vw/50));
+    }
+    .fourth-right img{
+      max-width: 100%;
+    }
+
     .fifth-page{
       max-width: 100vw;
       overflow: hidden;
@@ -505,5 +522,36 @@ nav{
     .fifth-right span{
       font-size: 1.2rem;
       color: rgb(240, 240, 240);
+    }
+    .sixth-page{
+      padding: 5% 5%;
+    }
+    .portrait-container img{
+      height: 40vh;
+    }
+    .photo-video video{
+      max-width: 30vw;
+      border-radius: 10%;
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, -53%);
+    }
+    .photo-video img{
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 33vw;
+      z-index: 2;
+      left: 0;
+      bottom: 0;
+    }
+    .photo-video{
+      top:90%;
+    }
+    .photo-title{
+      font-size: max(1.5, calc(100vw/50));
+    }
+    .photo-subtitle{
+      font-size: max(3, calc(100vw/50));
     }
 }
