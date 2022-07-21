@@ -74,6 +74,7 @@ nav img{
   font-size: 0.8rem;
   font-family: 'Poppins',sans-serif;
   font-weight: 500;
+  cursor: pointer;
 }
 .showcase-arrow{
   position: absolute;
