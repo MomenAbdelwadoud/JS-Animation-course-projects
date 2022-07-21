@@ -89,9 +89,9 @@ nav img{
 }
 
 .circle-1{
-  left:-5%;
-  bottom:-20%;
-  scale: 1.5;
+  left:-10%;
+  bottom: 0%;
+  scale: 0.2;
 }
 
 .circle-2{
@@ -115,7 +115,8 @@ nav img{
   background-color: white;
   position: absolute;
   width: 100%;
-  z-index: 5;
+  min-height: 180vh;
+  z-index: 10;
 }
 .product-description{
   padding: 5% 0;

@@ -106,7 +106,7 @@ barba.init({
 });
 
 function productEnterAnimation(next, done) {
-  tlEnter.fromTo(next, { y: "100%" }, { y: "0%", duration: 1 });
+  tlEnter.fromTo(next, { y: "100%" }, { y: "0%", duration: 1 }, "<");
   tlEnter.fromTo(
     ".card",
     { y: 10, opacity: 0 },
